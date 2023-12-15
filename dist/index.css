@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Whisper&display=swap');
+
+* {
+    font-family: 'Whisper', cursive;
+}
+
+html {
+    font-size: 16px;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -9,14 +19,14 @@ body {
     height: 100px;
     position: fixed;
     top: 0;
-    box-shadow: 0 1px 2px rgb(0, 0, 0);
+    box-shadow: 0 1px 2px rgb(7, 7, 7);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
 }
 
-.content {
+#content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,24 +36,43 @@ body {
     background-size: cover;
 }
 
-/* .content * {
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    margin: 140px 40px 40px 40px;
-    border: 2px solid white;
-} */
-
 .button {
     border: none;
     background-color: transparent;
     color: white;
     border-radius: 4px;
-    font-size: 1.1rem;
+    font-size: 2rem;
     cursor: pointer;
     padding: 10px 20px;
 }
 
 .button:hover {
     color: rgb(167, 167, 167);
+}
+
+.hero-box {
+    border: 1px solid white;
+    width: 80%;
+    height: 70%;
+    margin-top: 100px;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-box > .title {
+    font-size: 10rem;
+    font-weight: bold;
+    letter-spacing: 8px;
+}
+
+.hero-box > .subtitle {
+    font-size: 4rem;
+    letter-spacing: 8px;
+    text-align: center;
 }

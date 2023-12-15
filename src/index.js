@@ -2,10 +2,10 @@ import Home from './home.js';
 import Menu from './menu.js';
 import Contact from './contact.js';
 
-let buttons = [{ title: "Home", element: Home}, {title: "Menu", element: Menu}, {title: "Content", element: Contact}];
+let buttons = [{ title: "Home", element: Home}, {title: "Menu", element: Menu}, {title: "Contact", element: Contact}];
 
 const root = document.querySelector('body');
-const content = document.querySelector('.content');
+const content = document.querySelector('#content');
 
 function CreateNavBar() {
     const navContainer = document.createElement('div');
